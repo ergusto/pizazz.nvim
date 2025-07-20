@@ -1,4 +1,4 @@
-# ergusto/pizazz.nvim
+# pizazz.nvim
 
 A simple blue nvim theme
 
