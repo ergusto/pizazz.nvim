@@ -22,24 +22,25 @@ local palette = {
 		tag_blue_dark = hsl(210, 30, 50),
 	},
 	light = {
-		bg_main = hsl(0, 0, 98),
-		bg_alt = hsl(0, 0, 92),
-		text_primary = hsl(220, 25, 15), -- darker for better contrast
-		text_accent = hsl(215, 65, 35), -- slightly deeper blue
-		text_number = hsl(35, 40, 30), -- darker brown
-		text_muted = hsl(220, 10, 45), -- less washed out
-		text_info = hsl(190, 45, 35), -- more saturation
-		text_success = hsl(100, 45, 30), -- earthy green
-		text_warning = hsl(45, 40, 35), -- golden but visible
-		text_error = hsl(0, 65, 30), -- deep brick red
+		bg_main = hsl(210, 25, 94),
+		bg_alt = hsl(210, 20, 89),
 
-		border = hsl(220, 10, 65), -- soft neutral
-		sidebar_fg = hsl(220, 20, 25), -- low brightness neutral
-		sidebar_dim = hsl(200, 10, 85), -- very light gray
+		text_primary = hsl(220, 25, 15),
+		text_accent = hsl(215, 65, 35),
+		text_number = hsl(35, 40, 30),
+		text_muted = hsl(220, 10, 35),
+		text_info = hsl(190, 45, 35),
+		text_success = hsl(100, 45, 30),
+		text_warning = hsl(45, 40, 35),
+		text_error = hsl(0, 65, 30),
 
-		tag_blue = hsl(210, 85, 40), -- punchy tag
-		tag_blue_alt = hsl(210, 60, 35), -- muted alternative
-		tag_blue_dark = hsl(210, 30, 30), -- even more muted
+		border = hsl(210, 15, 75),
+		sidebar_fg = hsl(220, 20, 25),
+		sidebar_dim = hsl(210, 25, 88),
+
+		tag_blue = hsl(210, 85, 40),
+		tag_blue_alt = hsl(210, 60, 35),
+		tag_blue_dark = hsl(210, 30, 30),
 	},
 }
 
