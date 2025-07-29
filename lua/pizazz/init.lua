@@ -6,7 +6,8 @@ return {
 	dark = get_theme(palette.dark),
 	light = get_theme(palette.light),
 	load = function(flavor)
-		local theme = flavor == "light" and require("pizzaz").light or require("pizzaz").dark
+		local mod = require("pizazz")
+		local theme = flavor == "light" and mod.light or mod.dark
 		lush(theme)
 	end,
 }

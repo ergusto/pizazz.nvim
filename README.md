@@ -21,3 +21,14 @@ A simple blue nvim theme
 ![Preview](/assets/preview.png)
 
 ![Preview React](/assets/preview.react.png)
+
+### Running tests
+
+After cloning the test dependencies you can run the suite with `busted` under
+Neovim:
+
+```bash
+nvim --headless -u tests/minimal_init.lua \
+  -c "lua require('plenary.busted').run{'tests'}" \
+  -c qa
+```

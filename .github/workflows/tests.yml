@@ -1,0 +1,24 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Neovim
+        uses: MunifTanjim/setup-neovim@v1
+      - name: Install dependencies
+        run: |
+          git clone --depth 1 https://github.com/nvim-lua/plenary.nvim tests/deps/plenary.nvim
+          git clone --depth 1 https://github.com/rktjmp/lush.nvim tests/deps/lush.nvim
+          sudo apt-get update
+          sudo apt-get install -y luarocks
+          sudo luarocks install busted
+      - name: Run tests
+        run: |
+          nvim --headless -u tests/minimal_init.lua \
+            -c "lua require('plenary.busted').run{'tests'}" \
+            -c qa
