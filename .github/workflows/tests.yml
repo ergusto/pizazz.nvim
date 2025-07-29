@@ -9,9 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up Neovim
-        uses: rhysd/action-setup-vim@v1
-        with:
-          neovim: true
+        uses: chrisgrieser/setup-neovim@v1
       - name: Install dependencies
         run: |
           git clone --depth 1 https://github.com/nvim-lua/plenary.nvim tests/deps/plenary.nvim
