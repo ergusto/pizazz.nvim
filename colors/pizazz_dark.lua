@@ -1,3 +1,2 @@
-local lush = require("lush")
-local theme = require("pizazz").dark
-lush(theme)
+local pizazz = require("pizazz")
+pizazz.load("dark")
