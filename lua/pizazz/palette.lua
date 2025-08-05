@@ -1,46 +1,56 @@
-local hsl = require("lush.hsl")
-
 return {
 	dark = {
-		bg_main = hsl(220, 16, 14),
-		bg_alt = hsl(220, 18, 18),
+		-- Exact master branch colors
+		bg_main = "#1E2229",
+		bg_alt = "#262B36",
 
-		text_primary = hsl(210, 20, 85),
-		text_accent = hsl(200, 60, 70),
-		text_number = hsl(35, 40, 55),
-		text_muted = hsl(215, 13, 50),
-		text_info = hsl(190, 35, 60),
-		text_success = hsl(100, 30, 60),
-		text_warning = hsl(45, 40, 65),
-		text_error = hsl(0, 60, 55),
+		primary = "#D1D9E0",
+		accent = "#85C2E0",
+		number = "#BA945E",
+		muted = "#6F7D90",
+		info = "#75B1BD",
+		success = "#8FB87A",
+		warning = "#C9B882",
+		error = "#D14747",
 
-		border = hsl(220, 15, 45),
-		sidebar_fg = hsl(225, 20, 75),
-		sidebar_dim = hsl(220, 15, 35),
+		border = "#626D84",
+		sidebar_fg = "#B3B9CC",
+		sidebar_dim = "#4C5567",
 
-		tag_blue = hsl(210, 85, 75),
-		tag_blue_alt = hsl(210, 60, 60),
-		tag_blue_dark = hsl(210, 30, 50),
+		tag = "#89BFF5",
+		function_name = "#6B9BD1",
+		constructor = "#5C99D6",
+
+		-- Cursor colors (added for improved visibility)
+		cursor_bg = "#B3B9CC",
+		cursor_line = "#262B36",
+		visual_bg = "#4C5567",
 	},
 	light = {
-		bg_main = hsl(210, 25, 94),
-		bg_alt = hsl(210, 20, 89),
+		-- Exact master branch colors
+		bg_main = "#ECF0F4",
+		bg_alt = "#DDE3E9",
 
-		text_primary = hsl(220, 25, 15),
-		text_accent = hsl(215, 65, 35),
-		text_number = hsl(35, 40, 30),
-		text_muted = hsl(220, 10, 35),
-		text_info = hsl(190, 45, 35),
-		text_success = hsl(100, 45, 30),
-		text_warning = hsl(45, 40, 35),
-		text_error = hsl(0, 65, 30),
+		primary = "#1D2330",
+		accent = "#1F5093",
+		number = "#6B522E",
+		muted = "#505662",
+		info = "#317481",
+		success = "#416F2A",
+		warning = "#7D6B36",
+		error = "#7E1B1B",
 
-		border = hsl(210, 15, 75),
-		sidebar_fg = hsl(220, 20, 25),
-		sidebar_dim = hsl(210, 25, 88),
+		border = "#B6BFC9",
+		sidebar_fg = "#333B4D",
+		sidebar_dim = "#D9E0E8",
 
-		tag_blue = hsl(210, 85, 40),
-		tag_blue_alt = hsl(210, 60, 35),
-		tag_blue_dark = hsl(210, 30, 30),
+		tag = "#0F66BD",
+		function_name = "#3A6BAF",
+		constructor = "#364C63",
+
+		-- Cursor colors (added for improved visibility)
+		cursor_bg = "#1D2330",
+		cursor_line = "#DDE3E9",
+		visual_bg = "#B6BFC9",
 	},
 }
