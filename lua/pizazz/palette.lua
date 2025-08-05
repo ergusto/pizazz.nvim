@@ -5,17 +5,16 @@ return {
 		bg_alt = "#262B36",
 
 		primary = "#D1D9E0",
-		accent = "#85C2E0",
+		accent = "#95D5F0",
 		number = "#BA945E",
 		muted = "#6F7D90",
-		info = "#75B1BD",
+		info = "#6A9FB0",
 		success = "#8FB87A",
 		warning = "#C9B882",
 		error = "#D14747",
 
 		border = "#626D84",
-		sidebar_fg = "#B3B9CC",
-		sidebar_dim = "#4C5567",
+		dimmed = "#B3B9CC",
 
 		tag = "#89BFF5",
 		function_name = "#6B9BD1",
@@ -41,16 +40,15 @@ return {
 		error = "#7E1B1B",
 
 		border = "#B6BFC9",
-		sidebar_fg = "#333B4D",
-		sidebar_dim = "#D9E0E8",
+		dimmed = "#333B4D",
 
 		tag = "#0F66BD",
 		function_name = "#3A6BAF",
 		constructor = "#364C63",
 
 		-- Cursor colors (added for improved visibility)
-		cursor_bg = "#1D2330",
-		cursor_line = "#DDE3E9",
+		cursor_bg = "#B6BFC9",
+		cursor_line = "#D9E0E8",
 		visual_bg = "#B6BFC9",
 	},
 }
