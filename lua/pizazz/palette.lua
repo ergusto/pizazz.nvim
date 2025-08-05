@@ -1,14 +1,15 @@
 return {
 	dark = {
 		-- Exact master branch colors
-		bg_main = "#1E2229",
-		bg_alt = "#262B36",
+		bg_main = "#1F232A",
+		bg_alt = "#272C37",
 
 		primary = "#D1D9E0",
 		accent = "#95D5F0",
-		number = "#BA945E",
-		muted = "#6F7D90",
-		info = "#6A9FB0",
+		number = "#D4A574",
+		string = "#A8C084",
+		muted = "#8A95A6",
+		info = "#7AB3C0",
 		success = "#8FB87A",
 		warning = "#C9B882",
 		error = "#D14747",
@@ -20,21 +21,21 @@ return {
 		function_name = "#6B9BD1",
 		constructor = "#5C99D6",
 
-		-- Cursor colors (added for improved visibility)
+		-- Cursor colors
 		cursor_bg = "#B3B9CC",
 		cursor_line = "#262B36",
 		visual_bg = "#4C5567",
 	},
 	light = {
-		-- Exact master branch colors
-		bg_main = "#ECF0F4",
-		bg_alt = "#DDE3E9",
+		bg_main = "#F8F9FB",
+		bg_alt = "#EEF2F6",
 
 		primary = "#1D2330",
-		accent = "#1F5093",
-		number = "#6B522E",
-		muted = "#505662",
-		info = "#317481",
+		accent = "#1A4480",
+		number = "#8B6B35",
+		string = "#5A7A3F",
+		muted = "#3F4752",
+		info = "#2A5F68",
 		success = "#416F2A",
 		warning = "#7D6B36",
 		error = "#7E1B1B",
@@ -48,7 +49,7 @@ return {
 
 		-- Cursor colors (added for improved visibility)
 		cursor_bg = "#B6BFC9",
-		cursor_line = "#D9E0E8",
-		visual_bg = "#B6BFC9",
+		cursor_line = "#E1E7ED",
+		visual_bg = "#D0D7E0",
 	},
 }
