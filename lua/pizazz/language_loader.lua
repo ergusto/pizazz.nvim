@@ -1,7 +1,7 @@
 local function setup_language_highlights(colors)
 	-- Clear any existing pizazz language autocommands
 	vim.api.nvim_create_augroup("PizazzLanguageHighlights", { clear = true })
-	
+
 	-- Get the languages directory path
 	local script_path = debug.getinfo(1, "S").source:sub(2)
 	local languages_dir = vim.fn.fnamemodify(script_path, ":h") .. "/languages"
@@ -30,7 +30,7 @@ local function setup_language_highlights(colors)
 						vim.api.nvim_set_hl(0, group, opts)
 					end
 				end
-				
+
 				-- Also set up autocommands for future file loads
 				local captured_colors = colors
 				vim.api.nvim_create_autocmd("FileType", {
@@ -47,8 +47,8 @@ local function setup_language_highlights(colors)
 				})
 			end
 		end
-		-- Silently ignore files that don't load or have wrong structure
 	end
 end
 
 return setup_language_highlights
+
