@@ -147,7 +147,7 @@ local function apply_highlights(colors)
 	vim.api.nvim_set_hl(0, "IndentBlanklineChar", { fg = colors.border })
 end
 
-local setup_language_highlights = require("pizazz.language_loader")
+local setup_language_highlights = require("estuary.language_loader")
 
 return function(colors)
 	apply_highlights(colors)

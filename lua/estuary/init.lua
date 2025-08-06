@@ -1,5 +1,5 @@
-local palette = require("pizazz.palette")
-local get_theme = require("pizazz.get_theme")
+local palette = require("estuary.palette")
+local get_theme = require("estuary.get_theme")
 
 local M = {}
 

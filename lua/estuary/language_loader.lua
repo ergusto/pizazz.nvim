@@ -1,6 +1,6 @@
 local function setup_language_highlights(colors)
-	-- Clear any existing pizazz language autocommands
-	vim.api.nvim_create_augroup("PizazzLanguageHighlights", { clear = true })
+	-- Clear any existing estuary language autocommands
+	vim.api.nvim_create_augroup("EstuaryLanguageHighlights", { clear = true })
 
 	-- Get the languages directory path
 	local script_path = debug.getinfo(1, "S").source:sub(2)
@@ -18,7 +18,7 @@ local function setup_language_highlights(colors)
 	for _, filepath in ipairs(lang_files) do
 		local filename = vim.fn.fnamemodify(filepath, ":t:r") -- Get filename without extension
 
-		local ok, lang_config = pcall(require, "pizazz.languages." .. filename)
+		local ok, lang_config = pcall(require, "estuary.languages." .. filename)
 
 		if ok then
 			-- Validate structure
@@ -34,7 +34,7 @@ local function setup_language_highlights(colors)
 				-- Also set up autocommands for future file loads
 				local captured_colors = colors
 				vim.api.nvim_create_autocmd("FileType", {
-					group = "PizazzLanguageHighlights",
+					group = "EstuaryLanguageHighlights",
 					pattern = lang_config.filetypes,
 					callback = function()
 						local highlight_ok, highlights = pcall(lang_config.apply, captured_colors)
